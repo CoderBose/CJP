@@ -1255,6 +1255,7 @@ def main():
         }
 
         @media (max-width: 768px) {
+            /* Header + nav */
             header {
                 padding: 1rem;
             }
@@ -1262,11 +1263,127 @@ def main():
                 flex-direction: column;
                 gap: 1rem;
             }
+            .nav-tabs {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .tab-btn {
+                padding: 0.55rem 1rem;
+                font-size: 0.8rem;
+            }
+            .github-cta {
+                padding: 0.5rem 0.95rem;
+                font-size: 0.75rem;
+            }
+
+            /* Main content */
             main {
                 padding: 1rem;
             }
+
+            /* Timeline split view */
+            .timeline-column {
+                padding: 1.25rem 1rem;
+                height: 340px;
+            }
+            .detail-column {
+                padding: 1.5rem 1.25rem;
+            }
+            .timeline-item-btn {
+                padding: 1rem 0.9rem;
+            }
+            .btn-title {
+                font-size: 0.9rem;
+            }
             .detail-title {
+                font-size: 1.5rem;
+            }
+            .detail-body {
+                font-size: 1rem;
+            }
+
+            /* Tweet cards */
+            .tweet-card {
+                padding: 1.25rem;
+            }
+            .tweet-content {
+                font-size: 1rem;
+            }
+            .tweet-footer {
+                flex-wrap: wrap;
+                gap: 0.75rem;
+            }
+
+            /* Video player mockup */
+            .video-player-container {
+                padding: 1.75rem 1.25rem;
+            }
+
+            /* Heroes: force single column so 350px min-column doesn't overflow */
+            .heroes-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .hero-card {
+                padding: 1.75rem 1.5rem;
+            }
+
+            /* Memorial */
+            .memorial-container {
+                padding: 2rem 1.25rem;
+            }
+            .memorial-title {
                 font-size: 1.75rem;
+                flex-direction: column;
+            }
+
+            /* Gallery */
+            .gallery-item img {
+                height: 210px;
+            }
+            .sub-tab-btn {
+                padding: 0.55rem 1.1rem;
+                font-size: 0.8rem;
+            }
+
+            /* Context cards */
+            .context-card {
+                padding: 1.75rem 1.5rem;
+            }
+            .context-card-title {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Very small phones: shed icons, tighten fonts, denser grids */
+            .tab-btn {
+                padding: 0.5rem 0.75rem;
+                font-size: 0.75rem;
+            }
+            .tab-btn svg,
+            .sub-tab-btn svg {
+                display: none;
+            }
+            .nav-tabs {
+                gap: 2px;
+                padding: 4px;
+            }
+            .detail-title {
+                font-size: 1.3rem;
+            }
+            .detail-tag {
+                font-size: 0.7rem;
+            }
+            .memorial-title {
+                font-size: 1.4rem;
+            }
+            .candles-grid {
+                grid-template-columns: repeat(auto-fill, minmax(74px, 1fr));
+                gap: 1rem;
+            }
+            .gallery-item img {
+                height: 180px;
             }
         }
     </style>

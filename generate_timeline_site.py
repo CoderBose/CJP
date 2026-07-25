@@ -1457,7 +1457,7 @@ def main():
                         <div class="detail-body">
                             <p>Instead of launching traditional protests, 30-year-old political strategist and former Boston University student <strong>Abhijeet Dipke</strong> chose the weapon of absolute satire. Within 24 hours of the judge's remarks, he officially founded the <strong>Cockroach Janta Party (CJP)</strong>, declaring it the "voice of the lazy, unemployed, and resilient youth of India."</p>
                             
-                            <p>The movement adopted the cockroach as its mascot—symbolizing an organism that can survive a nuclear blast, just as India's youth are expected to survive systemic neglect and rising unemployment. The party coined the hilarious slogan <strong>"Secular, Socialist, Democratic, Lazy"</strong> and registered maroon as its official political color.</p>
+                            <p>The movement adopted the cockroach as its mascot, symbolizing an organism that can survive a nuclear blast, just as India's youth are expected to survive systemic neglect and rising unemployment. The party coined the hilarious slogan <strong>"Secular, Socialist, Democratic, Lazy"</strong> and registered maroon as its official political color.</p>
 
                             <p>CJP released a satirical 5-point manifesto, demanding:
                                 <ul style="margin-left: 2rem; margin-bottom: 1.5rem;">
@@ -1797,7 +1797,7 @@ def main():
                         Samdish bypassed standard political analysis and went directly into the thick of the action. He stood at the front lines next to the primary police barricades, taking direct hits and suffering physical injuries from police lathis. His 1-hour ground documentary, "Inside The Mind of A Cockroach," garnered over 4.5 million views, exposing the raw, heartbreaking reality of the student struggles.
                     </p>
                     <div class="hero-quote">
-                        "Unlike the studio anchors who watch from air-conditioned rooms, the students here aren't asking for riots—they are literally asking for a pen that doesn't leak exams."
+                        "Unlike the studio anchors who watch from air-conditioned rooms, the students here aren't asking for riots; they are literally asking for a pen that doesn't leak exams."
                     </div>
                 </div>
 

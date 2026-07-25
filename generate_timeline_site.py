@@ -751,6 +751,33 @@ def main():
             border-left: 3px solid var(--primary-orange);
         }
 
+        /* "Watch on Instagram" link inside the video mockup */
+        .video-watch-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding: 0.65rem 1.4rem;
+            background: linear-gradient(135deg, #833AB4 0%, #E1306C 50%, #F77737 100%);
+            color: #FFF;
+            border-radius: 24px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.35);
+            transition: all 0.25s ease;
+        }
+
+        .video-watch-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(225, 48, 108, 0.5);
+        }
+
+        .video-watch-link:active {
+            transform: translateY(0);
+        }
+
         /* View Panel: Heroes Grid */
         .heroes-grid {
             display: grid;
@@ -1310,14 +1337,26 @@ def main():
                             <div class="btn-title">Defiant Campout at Jantar Mantar</div>
                         </button>
 
-                        <!-- July 23 -->
+                        <!-- July 22 (police lathis) -->
                         <button class="timeline-item-btn" onclick="showDetail('day10')">
+                            <span class="btn-date">July 22, 2026</span>
+                            <div class="btn-title">Lathis at the Jantar Mantar Campsite</div>
+                        </button>
+
+                        <!-- July 22 (Rakhi Sawant video) -->
+                        <button class="timeline-item-btn" onclick="showDetail('day11')">
+                            <span class="btn-date">July 22, 2026</span>
+                            <div class="btn-title">Rakhi Sawant's Viral Video Reaction</div>
+                        </button>
+
+                        <!-- July 23 -->
+                        <button class="timeline-item-btn" onclick="showDetail('day12')">
                             <span class="btn-date">July 23, 2026</span>
                             <div class="btn-title">PM Offers Deal; CJP Rejects</div>
                         </button>
 
                         <!-- July 25 -->
-                        <button class="timeline-item-btn" onclick="showDetail('day11')">
+                        <button class="timeline-item-btn" onclick="showDetail('day13')">
                             <span class="btn-date">July 25, 2026</span>
                             <div class="btn-title">Cabinet Minister Resigns (Victory!)</div>
                         </button>
@@ -1534,37 +1573,12 @@ def main():
                         <div class="detail-header">
                             <span class="detail-tag">The March</span>
                             <div class="detail-date">July 20, 2026</div>
-                            <h2 class="detail-title">"Chalo Sansad" & Rakhi Sawant's Intervention</h2>
+                            <h2 class="detail-title">"Chalo Sansad" March & Police Clashes</h2>
                         </div>
                         <div class="detail-body">
                             <p>On July 20, the opening day of the Monsoon Session of Parliament, thousands of students, families, and activists attempted a peaceful march toward Parliament. Police and Rapid Action Force (RAF) personnel deployed multiple layers of barricades, eventually launching heavy tear gas canisters and severe baton lathicharges to disperse the crowds near Jantar Mantar.</p>
-                            
-                            <p>The violence meted out to young peaceful students sparked immense national outrage. At this critical juncture, Bollywood icon <strong>Rakhi Sawant</strong> released an extremely emotional, tears-filled video on Instagram, bypassing mainstream news silence to stand fully with the students.</p>
 
-                            <!-- RAKHI SAWANT PLAYBAR -->
-                            <div class="video-player-container">
-                                <div class="video-player-overlay">
-                                    <div class="video-icon">▶</div>
-                                    <div class="video-player-title">Instagram Video Statement by Rakhi Sawant</div>
-                                    <div class="video-player-subtitle">July 21, 2026 · 14.1M Views</div>
-                                    
-                                    <div class="audio-wave-graphic">
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                        <div class="audio-wave-bar"></div>
-                                    </div>
-
-                                    <div class="transcript-container">
-                                        "Haan, raat bhar soyi nahi hoon. Kaise so sakti hoon? Delhi mein chhatraon ko maara ja raha hai... Kya sachmuch yeh Bharat hai? Chhatraon ke papers leak ho rahe hain—NEET paper, NEET paper. Anshan par baithe logon ko maara ja raha hai... Mujhe Jhansi ki Rani banne ka dil kar raha hai, ki main hockey bat aur talwar lekar jaaun aur ek-ek ko peet daalun! Yeh bache apne haq ke liye lad rahe hain!"
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p>Rakhi's raw passion resonated deeply with the youth, causing <strong>"Rakhi Sawant for President"</strong> to trend globally as she condemned the police's "brutal and inhuman treatment" of students.</p>
+                            <p>Dozens of students were injured, medical volunteers were caught in the tear gas cloud, and footage of parents being struck by RAF batons circulated within minutes. The violence meted out to young peaceful protestors sparked immense national outrage, setting the stage for an even harsher police action at the Jantar Mantar campsite 48 hours later, and for the country's most unexpected celebrity response.</p>
                         </div>
                     </div>
 
@@ -1589,8 +1603,71 @@ def main():
                         </div>
                     </div>
 
-                    <!-- DAY 10 DETAIL: PM OFFERS DEAL -->
+                    <!-- DAY 10 DETAIL: LATHIS AT JANTAR MANTAR -->
                     <div id="day10" class="detail-content">
+                        <div class="detail-header">
+                            <span class="detail-tag">State Violence</span>
+                            <div class="detail-date">July 22, 2026</div>
+                            <h2 class="detail-title">Lathis at the Jantar Mantar Campsite</h2>
+                        </div>
+                        <div class="detail-body">
+                            <p>Two days after the "Chalo Sansad" clashes, the state escalated further. In the pre-dawn hours of July 22, Delhi Police units armed with <strong>lathis and wooden sticks</strong> entered the Jantar Mantar protest campsite itself, striking students, hunger strikers, and elderly volunteers who had gathered peacefully on protected democratic ground.</p>
+
+                            <p>Unlike the July 20 confrontation on the road to Parliament, this action targeted a stationary, non-violent sit-in. Dozens were injured. Medical volunteers who were tending to hunger strikers had their supplies overturned. Video footage taken by embedded independent reporters showed parents shielding their own children with their bodies as blows landed.</p>
+
+                            <div class="blue-quote-box ink-attack">
+                                "They came for our children with sticks meant for criminals. My son was on his eighth day of fasting. What threat was he to the nation?"
+                                <span class="quote-author">A mother of a hunger striker (Brut India ground report)</span>
+                            </div>
+
+                            <p>The images circulated globally within hours, drawing sharp condemnation from Amnesty International, the National Human Rights Commission, and opposition MPs. But the most explosive reaction of the day was still to come, from a corner of Indian public life no one had expected.</p>
+                        </div>
+                    </div>
+
+                    <!-- DAY 11 DETAIL: RAKHI SAWANT VIDEO -->
+                    <div id="day11" class="detail-content">
+                        <div class="detail-header">
+                            <span class="detail-tag">Viral Moment</span>
+                            <div class="detail-date">July 22, 2026</div>
+                            <h2 class="detail-title">Rakhi Sawant Breaks the Mainstream Silence</h2>
+                        </div>
+                        <div class="detail-body">
+                            <p>Within hours of the Jantar Mantar lathi charge, Bollywood icon <strong>Rakhi Sawant</strong> broke the pattern of celebrity silence. In a raw, tear-streaked video posted to her Instagram, she bypassed the mainstream news blackout to stand fully with the students, amplifying their cause to her tens of millions of followers overnight.</p>
+
+                            <!-- RAKHI SAWANT PLAYBAR -->
+                            <div class="video-player-container">
+                                <div class="video-player-overlay">
+                                    <div class="video-icon">▶</div>
+                                    <div class="video-player-title">Instagram Video Statement by Rakhi Sawant</div>
+                                    <div class="video-player-subtitle">July 22, 2026 · 14.1M Views</div>
+
+                                    <div class="audio-wave-graphic">
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                        <div class="audio-wave-bar"></div>
+                                    </div>
+
+                                    <div class="transcript-container">
+                                        "Haan, raat bhar soyi nahi hoon. Kaise so sakti hoon? Delhi mein chhatraon ko maara ja raha hai... Kya sachmuch yeh Bharat hai? Chhatraon ke papers leak ho rahe hain, NEET paper, NEET paper. Anshan par baithe logon ko maara ja raha hai... Mujhe Jhansi ki Rani banne ka dil kar raha hai, ki main hockey bat aur talwar lekar jaaun aur ek-ek ko peet daalun! Yeh bache apne haq ke liye lad rahe hain!"
+                                    </div>
+
+                                    <a href="https://www.instagram.com/p/DbEhDUlNCcn/" target="_blank" rel="noopener noreferrer" class="video-watch-link">
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: -3px; margin-right: 6px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                        Watch on Instagram
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p>Rakhi's raw passion resonated deeply with the youth, causing <strong>"Rakhi Sawant for President"</strong> to trend globally as she condemned the police's "brutal and inhuman treatment" of students. Within twenty-four hours the video had crossed 14 million views, forcing the mainstream television networks to finally acknowledge the movement they had spent 68 days ignoring.</p>
+                        </div>
+                    </div>
+
+                    <!-- DAY 12 DETAIL: PM OFFERS DEAL -->
+                    <div id="day12" class="detail-content">
                         <div class="detail-header">
                             <span class="detail-tag blue-tag">Stalemate</span>
                             <div class="detail-date">July 23, 2026</div>
@@ -1610,8 +1687,8 @@ def main():
                         </div>
                     </div>
 
-                    <!-- DAY 11 DETAIL: VICTORY -->
-                    <div id="day11" class="detail-content">
+                    <!-- DAY 13 DETAIL: VICTORY -->
+                    <div id="day13" class="detail-content">
                         <div class="detail-header">
                             <span class="detail-tag success-tag">Absolute Victory</span>
                             <div class="detail-date">July 25, 2026 (Today)</div>

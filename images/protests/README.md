@@ -15,6 +15,6 @@ Use dashes or underscores to space words. Keep names descriptive.
 
 1. Add your image files to this folder
 2. Commit and push to the repo
-3. Re-run `python3 generate_timeline_site-v5.py` to regenerate `index.html`
+3. Re-run `python3 generate_timeline_site.py` to regenerate `index.html`
 
 The Gallery > Protests sub-tab will pick them up automatically.

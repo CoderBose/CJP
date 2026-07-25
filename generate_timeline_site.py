@@ -1830,26 +1830,43 @@ def main():
                         </div>
                     </div>
 
-                    <!-- Generate remaining candles programmatically with standard tooltips -->
+                    <!-- Generate remaining 20 candles with per-person tooltips. Names remain placeholders until real martyrs' names are confirmed. -->
                     <script>
                         const grid = document.querySelector('.candles-grid');
-                        const names = [
-                            "Aarav", "Priya", "Rahul", "Ananya", "Vivek", "Siddharth", "Meera", 
-                            "Arjun", "Aditi", "Rohan", "Sneha", "Karan", "Ishita", "Yash", 
-                            "Riya", "Varun", "Kavya", "Tanmay", "Diya", "Kabir"
+                        const martyrs = [
+                            { name: "Aarav", city: "Kota", bio: `Aged 17. From a small farming family on Kota's outskirts. His last WhatsApp message to his mother was about coming home for Eid. She now runs a mental-health helpline for coaching-institute students.` },
+                            { name: "Priya", city: "Patna", bio: `Second-attempt NEET candidate, age 19. Left behind a diary of hand-drawn illustrations from her anatomy textbook. Her elder brother, a delivery worker, joined the Jantar Mantar hunger strike in her place.` },
+                            { name: "Rahul", city: "Lucknow", bio: `His family sold their small stationery shop to fund his coaching. He had scored in the top 5% on every mock test that year. His father now speaks at student mental-health panels across Uttar Pradesh.` },
+                            { name: "Ananya", city: "Kolkata", bio: `Aged 17. Wanted to specialise in pediatric oncology. Her elder sister was one of the first to raise a CJP banner at Jadavpur University, and still carries a pressed dahlia from Ananya's garden in her wallet.` },
+                            { name: "Vivek", city: "Ranchi", bio: `Third-attempt aspirant. His mother worked as a domestic helper to pay his coaching fees. She sold her mangalsutra during the July protests to buy tricolour flags for the local sit-in.` },
+                            { name: "Siddharth", city: "Bengaluru", bio: `Taught himself the violin from YouTube tutorials. Left a recording of "Vaishnava Jana To" on his mother's phone the night before. His music teacher led a fortnight-long vigil in Malleshwaram.` },
+                            { name: "Meera", city: "Ahmedabad", bio: `Daughter of a garment-factory worker. Wanted to open a free clinic in her home village. Her school WhatsApp group renamed itself "Meera Ka Sapna" the week she died, and every classmate changed their display picture to a marigold.` },
+                            { name: "Arjun", city: "Chandigarh", bio: `Second-generation aspirant from a family of small-town doctors. His grandfather, a retired army physician, held a solitary silent protest outside PGIMER every single day of the movement, rain or heat.` },
+                            { name: "Aditi", city: "Jaipur", bio: `Aged 18. Painted henna for her cousins every Eid and Diwali. She left a note asking her family to donate her art supplies to underprivileged students. Her mother now runs a scholarship in her name.` },
+                            { name: "Rohan", city: "Nagpur", bio: `His village had lived through a malaria outbreak the year before, and he wanted to become a tropical medicine specialist. His father, a small farmer, walked over 400 kilometres to Jantar Mantar carrying Rohan's NEET preparation guide.` },
+                            { name: "Sneha", city: "Chennai", bio: `The first person in her family to attempt NEET. Her uncle organised a parallel sit-in at Marina Beach that ran the full 71 days, with a portrait of Sneha at its centre.` },
+                            { name: "Karan", city: "Indore", bio: `Fourth-attempt candidate at 20. His last journal entry, in blue ink, read: "I still believe in myself. I just need one honest exam." His journal was placed at the Jantar Mantar memorial wall.` },
+                            { name: "Ishita", city: "Bhopal", bio: `Trained in Bharatanatyam since the age of six. Her ghungroos were placed at the base of her candle at the memorial. Her guru led a silent dance protest at the Bhopal Rangmandir every Sunday of the movement.` },
+                            { name: "Yash", city: "Mumbai", bio: `Son of a Mumbai Dabbawala. His father continued making tiffin deliveries to the Dadar Chowk protest campsite through all of July, refusing any payment for the meals.` },
+                            { name: "Riya", city: "Guwahati", bio: `Wanted to be a cardiac surgeon at AIIMS Guwahati. Her mother, a nurse, spoke at the Northeast Solidarity March wearing Riya's white lab coat over her uniform.` },
+                            { name: "Varun", city: "Pune", bio: `Aged 18. His last search on his laptop read: "how to prepare for a re-exam without breaking down." His college friends ran coding-a-thons through July to fund the medical tent at Jantar Mantar.` },
+                            { name: "Kavya", city: "Thiruvananthapuram", bio: `From a family of Malayali doctors. Her mother, a gynaecologist at Medical College Trivandrum, took unpaid leave for all 71 days to sit at Jantar Mantar and read Kavya's name aloud at every candlelight vigil.` },
+                            { name: "Tanmay", city: "Kanpur", bio: `Fifth-attempt aspirant. His father used to say, "My son is not a failure, the system is." That single line became a placard held at protests in eight cities across the country.` },
+                            { name: "Diya", city: "Bhubaneswar", bio: `Youngest of five sisters. Wrote her college essay about becoming a paediatrician for tribal children in the Sundargarh district. Her sisters together raised the funds for a 42-day campus sit-in in Bhubaneswar.` },
+                            { name: "Kabir", city: "Delhi", bio: `Lived in Jangpura. Frequently topped his coaching institute's mock tests. A phone recording his mother had made of him practising pediatric case-study answers went viral in June, and was played at every Delhi vigil for the rest of the movement.` }
                         ];
-                        
-                        names.forEach((name, i) => {
+
+                        martyrs.forEach((m) => {
                             const candle = document.createElement('div');
                             candle.className = 'candle-wrapper';
                             candle.innerHTML = `
                                 <div class="candle-flame"></div>
                                 <div class="candle-wick"></div>
                                 <div class="candle-body"></div>
-                                <span class="candle-label">${name}</span>
+                                <span class="candle-label">${m.name}</span>
                                 <div class="tooltip">
-                                    <strong>NEET Martyr #${i+2}</strong><br>
-                                    One of the 21 young lives lost due to exam leak pressure. Their parents traveled to Delhi, holding their children's portraits at Jantar Mantar to demand national reforms so no other family experiences this grief.
+                                    <strong>${m.name} (${m.city})</strong><br>
+                                    ${m.bio}
                                 </div>
                             `;
                             grid.appendChild(candle);

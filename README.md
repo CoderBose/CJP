@@ -51,6 +51,10 @@ That's it. No dependencies, no build tools, no framework. Just Python's standard
 - `vercel.json` configures Vercel to run the Python script on every deploy
 - `.gitignore` keeps the generated `index.html` out of git; Vercel rebuilds it fresh
 
+## References
+
+Real events, legal cases, activists, and historical movements that anchor this fiction are catalogued in [REFERENCES.md](REFERENCES.md). Add to it when you find something worth remembering.
+
 ---
 
 <p align="center"><strong>Long live the cockroach. Long live the Constitution.</strong></p>

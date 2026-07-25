@@ -863,9 +863,15 @@ def main():
         /* View Panel: Context & Memorial */
         .context-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(2, minmax(0, 1fr));
             gap: 2.5rem;
             margin-bottom: 3rem;
+        }
+
+        @media (max-width: 900px) {
+            .context-section {
+                grid-template-columns: 1fr;
+            }
         }
 
         .context-card {
@@ -1879,6 +1885,34 @@ def main():
                         <p>The success of the Cockroach Janta Party protests lay in its absolute diversity. While it was initiated and driven online by Gen Z's sharp satirical memes, it quickly grew into a massive, trans-generational struggle that brought together people of all backgrounds and ages.</p>
                         <p>Alongside the young, keyboard-warrior college students stood their working-class parents, who had invested their life savings into their children's coaching institutes and NEET applications. The protest campsite saw professional commercial pilots who had lost faith in the system, traditional artists, and seasoned satyagrahis marching hand-in-hand.</p>
                         <p>Elderly grandparents sat on the concrete alongside teenagers, demonstrating that exam leak corruption is not just a student problem, but a deep crisis of national integrity that affects every family across India.</p>
+                    </div>
+                </div>
+
+                <!-- QUEER & TRANS SOLIDARITY -->
+                <div class="context-card">
+                    <h3 class="context-card-title">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                        They Showed Up and Showed Out
+                    </h3>
+                    <div class="context-card-body">
+                        <p>Long before this movement had a name, India's queer and trans communities already knew how to march. They had done it for Section 377. They had done it for the Transgender Persons Act. They had done it for their own funerals. When the very first sit-in went up at Jantar Mantar, they were on the ground within hours.</p>
+                        <p>Trans hijra collectives from Old Delhi and Gurugram organised the water and langar supply chains through the hottest weeks of June. Queer student unions from <strong>JNU, Jamia, Jadavpur, and Ashoka</strong> linked arms with medical aspirants from small towns who had never met a queer person in their lives. Pride flags flew beside the tricolour at every solidarity rally, in every state.</p>
+                        <p>At the candlelight vigil for the twenty-one NEET martyrs, the loudest voices reading names into the dark came from Delhi's oldest hijra guru-shishya lineages. <em>"Every child we lost to that exam,"</em> one elder said to a Brut India camera, <em>"was our child too."</em></p>
+                        <p>Their fight and this fight had always been the same fight. A demand to be seen. A demand not to be dismissed. A demand not to be called cockroaches.</p>
+                    </div>
+                </div>
+
+                <!-- BEYOND JANTAR MANTAR: NATIONAL SPREAD -->
+                <div class="context-card">
+                    <h3 class="context-card-title">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        Beyond Jantar Mantar
+                    </h3>
+                    <div class="context-card-body">
+                        <p>Delhi was where the world watched, but Delhi was only ever the loudest room. From the second week of June, the movement leapt state lines and never looked back.</p>
+                        <p>In <strong>Hyderabad</strong>, students from Osmania University and the NEET aspirant coalition at IIT Hyderabad held nightly sit-ins at Tank Bund, hanging Sana's portrait from the lampposts each evening after her father joined the Jantar Mantar strike. In <strong>Mumbai</strong>, the Dadar Chowk march on June 15 drew fifteen thousand parents and coaching-class students; the Bombay High Court granted them protest permission the same afternoon Delhi Police was denying it. In <strong>Bihar</strong>, Patna and Muzaffarpur's unemployed graduates, who had failed the BPSC and NEET in the same brutal season, formed a joint front and held the longest continuous fast in the state's recorded history.</p>
+                        <p>Kolkata's Jadavpur University campus turned into an open-air library of protest literature. Lucknow, Chennai, Bengaluru, Chandigarh, Guwahati, Kochi, Bhopal, and Ranchi lit their own fires. By the week the Union Minister resigned, <strong>more than two hundred cities</strong> had held at least one solidarity event.</p>
+                        <p>What began in one corner of Delhi had, quietly and without a single central command, become a national reckoning.</p>
                     </div>
                 </div>
             </div>

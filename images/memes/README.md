@@ -9,7 +9,7 @@ Filenames are auto-converted to captions on the site:
 - `cji-vs-cockroach.png` → **Cji Vs Cockroach**
 - `secular_socialist_lazy.jpg` → **Secular Socialist Lazy**
 
-Use dashes or underscores to space words. Keep names punchy — they become the caption.
+Use dashes or underscores to space words. Keep names punchy: they become the caption.
 
 ## To publish
 

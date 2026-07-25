@@ -43,7 +43,6 @@ def build_gallery_section(script_dir, subfolder, display_name):
         items.append(
             f'<div class="gallery-item">'
             f'<img src="{folder_rel}/{safe_name}" alt="{label}" loading="lazy">'
-            f'<div class="gallery-caption">{label}</div>'
             f'</div>'
         )
     return '<div class="gallery-grid">' + "".join(items) + '</div>'
@@ -203,6 +202,43 @@ def main():
             color: var(--accent-blue);
             box-shadow: var(--shadow);
             border: 1px solid rgba(0,0,80,0.08);
+        }
+
+        /* "Contribute on GitHub" pill in the header */
+        .github-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0.6rem 1.1rem;
+            background-color: var(--text-dark);
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow);
+            margin-left: 12px;
+            white-space: nowrap;
+        }
+
+        .github-cta:hover {
+            background-color: var(--accent-blue);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .github-cta svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 768px) {
+            .github-cta {
+                margin-left: 0;
+            }
         }
 
         /* Main Screen Layout (Classic Split Screen) */
@@ -1273,6 +1309,11 @@ def main():
                     Memorial & Context
                 </button>
             </nav>
+
+            <a class="github-cta" href="https://github.com/CoderBose/CJP" target="_blank" rel="noopener noreferrer" aria-label="View source and contribute on GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.26 5.69.41.35.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.14 0 .31.21.68.8.56C20.21 21.38 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                Contribute on GitHub
+            </a>
         </div>
     </header>
 
@@ -1781,7 +1822,7 @@ def main():
             <div class="gallery-header">
                 <h2 style="font-family: var(--font-serif); font-size: 2.25rem; color: var(--accent-blue); margin-bottom: 0.5rem;">Community Gallery</h2>
                 <p style="color: var(--text-muted); max-width: 640px; margin: 0 auto; font-size: 1.05rem;">
-                    A living archive of the movement, contributed by CJP volunteers and protestors across India. Drop your photographs into <code style="background-color: var(--bg-white); color: var(--primary-dark-orange); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-color); font-size: 0.85rem;">images/protests/</code> and your meme-worthy protest slogans into <code style="background-color: var(--bg-white); color: var(--primary-dark-orange); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-color); font-size: 0.85rem;">images/memes/</code>.
+                    A living archive of the movement, contributed by CJP volunteers and protestors across India. Drop your photographs into <a href="https://github.com/CoderBose/CJP/tree/main/images/protests" target="_blank" rel="noopener noreferrer" style="background-color: var(--bg-white); color: var(--primary-dark-orange); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-color); font-size: 0.85rem; font-family: monospace; text-decoration: none;">images/protests/</a> and your meme-worthy protest slogans into <a href="https://github.com/CoderBose/CJP/tree/main/images/memes" target="_blank" rel="noopener noreferrer" style="background-color: var(--bg-white); color: var(--primary-dark-orange); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border-color); font-size: 0.85rem; font-family: monospace; text-decoration: none;">images/memes/</a>.
                 </p>
 
                 <div class="gallery-subtabs">

@@ -536,8 +536,9 @@ def main():
         .media-image-placeholder {
             width: 100%;
             height: 320px;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
+            background-color: var(--bg-light);
         }
 
         .media-caption {
@@ -1391,9 +1392,9 @@ def main():
                             <p>Though the Chief Justice later clarified that his comments were aimed specifically at individuals using fraudulent certificates and did not target India's hardworking youth, the quote went viral instantly. A wave of outrage, disbelief, and deep offense swept through social media, setting the stage for an explosive, satirical retaliation from Gen Z.</p>
 
                             <div class="media-container">
-                                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800" alt="Supreme Court of India" class="media-image-placeholder">
+                                <img src="images/cji_sc.jpg" alt="Supreme Court of India" class="media-image-placeholder">
                                 <div class="media-caption">
-                                    <strong>Figure 1:</strong> The Supreme Court of India in New Delhi, where the historic "cockroach" remarks were made on May 15.
+                                    <strong>Figure 1:</strong> Chief Justice of India, Surya Kant and The Supreme Court of India in New Delhi, where the historic "cockroach" remarks were made on May 15.
                                 </div>
                             </div>
                         </div>
@@ -1421,7 +1422,7 @@ def main():
                             </p>
 
                             <div class="media-container">
-                                <img src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&q=80&w=800" alt="Satirical Youth Gathering" class="media-image-placeholder">
+                                <img src="images/cjp.jpg" alt="Satirical Youth Party CJP Logo" class="media-image-placeholder">
                                 <div class="media-caption">
                                     <strong>Figure 2:</strong> Parody campaign banners and social media templates carrying the "Resilient Cockroach" logo that went viral overnight.
                                 </div>
@@ -1518,7 +1519,7 @@ def main():
                             <p>The Cockroach Janta Party formally allied with aggrieved student unions, launching peaceful sit-ins at Delhi's Jantar Mantar and organizing solidarity rallies in Kolkata, Patna, and Mumbai. The youth-led campaign focused heavily on demanding accountability, institutional reform, and the immediate resignation of Union Education Minister Dharmendra Pradhan.</p>
 
                             <div class="media-container">
-                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Mass Protest Rally" class="media-image-placeholder">
+                                <img src="images/flag_march.jpeg" alt="Mass Protest Rally" class="media-image-placeholder">
                                 <div class="media-caption">
                                     <strong>Figure 3:</strong> Thousands of youth and parents carrying the Indian National Tricolour at Jantar Mantar on June 6.
                                 </div>
@@ -1611,7 +1612,7 @@ def main():
                             <h2 class="detail-title">Lathis at the Jantar Mantar Campsite</h2>
                         </div>
                         <div class="detail-body">
-                            <p>Two days after the "Chalo Sansad" clashes, the state escalated further. In the pre-dawn hours of July 22, Delhi Police units armed with <strong>lathis and wooden sticks</strong> entered the Jantar Mantar protest campsite itself, striking students, hunger strikers, and elderly volunteers who had gathered peacefully on protected democratic ground.</p>
+                            <p>Two days after the "Chalo Sansad" clashes, the state escalated further. In the pre-dawn hours of July 22, Delhi Police units armed with <strong>lathis (wooden sticks) and tear gas</strong> entered the Jantar Mantar protest campsite itself, striking students, hunger strikers, and elderly volunteers who had gathered peacefully on protected democratic ground.</p>
 
                             <p>Unlike the July 20 confrontation on the road to Parliament, this action targeted a stationary, non-violent sit-in. Dozens were injured. Medical volunteers who were tending to hunger strikers had their supplies overturned. Video footage taken by embedded independent reporters showed parents shielding their own children with their bodies as blows landed.</p>
 
@@ -1705,7 +1706,7 @@ def main():
                             </div>
 
                             <div class="media-container">
-                                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" alt="Students Celebrating" class="media-image-placeholder">
+                                <img src="images/celebrate_victory.jpg" alt="Students Celebrating" class="media-image-placeholder">
                                 <div class="media-caption">
                                     <strong>Figure 4:</strong> Mass celebrations and tricolour-waving students at Jantar Mantar on the afternoon of July 25, 2026.
                                 </div>

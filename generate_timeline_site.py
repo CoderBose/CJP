@@ -1818,42 +1818,31 @@ def main():
                 </div>
 
                 <div class="candles-grid">
-                    <!-- Candle 1 - Sana -->
-                    <div class="candle-wrapper">
-                        <div class="candle-flame"></div>
-                        <div class="candle-wick"></div>
-                        <div class="candle-body"></div>
-                        <span class="candle-label" style="color: var(--primary-orange); font-weight:800;">Sana</span>
-                        <div class="tooltip">
-                            <strong>Sana (Hyderabad)</strong><br>
-                            Took her life out of despair over the NEET exam cancellations. Her father, Sheikh Jaffar Hussain, carried her portrait to Jantar Mantar and sat on a 20-day hunger strike, stating "The fear of re-exam killed her."
-                        </div>
-                    </div>
-
-                    <!-- Generate remaining 20 candles with per-person tooltips. Names remain placeholders until real martyrs' names are confirmed. -->
+                    <!-- The 21 NEET martyrs, in the order provided by the archive maintainers. Each entry has: `first` (label shown under the candle), `name` (full name shown on hover), `state`. To add per-person biography later, extend the object with a `bio` field and render it inside the tooltip below. Note on "Sheikh Sana": "Sheikh" is an honorific prefix, so her displayed first name is "Sana". -->
                     <script>
                         const grid = document.querySelector('.candles-grid');
                         const martyrs = [
-                            { name: "Aarav", city: "Kota", bio: `Aged 17. From a small farming family on Kota's outskirts. His last WhatsApp message to his mother was about coming home for Eid. She now runs a mental-health helpline for coaching-institute students.` },
-                            { name: "Priya", city: "Patna", bio: `Second-attempt NEET candidate, age 19. Left behind a diary of hand-drawn illustrations from her anatomy textbook. Her elder brother, a delivery worker, joined the Jantar Mantar hunger strike in her place.` },
-                            { name: "Rahul", city: "Lucknow", bio: `His family sold their small stationery shop to fund his coaching. He had scored in the top 5% on every mock test that year. His father now speaks at student mental-health panels across Uttar Pradesh.` },
-                            { name: "Ananya", city: "Kolkata", bio: `Aged 17. Wanted to specialise in pediatric oncology. Her elder sister was one of the first to raise a CJP banner at Jadavpur University, and still carries a pressed dahlia from Ananya's garden in her wallet.` },
-                            { name: "Vivek", city: "Ranchi", bio: `Third-attempt aspirant. His mother worked as a domestic helper to pay his coaching fees. She sold her mangalsutra during the July protests to buy tricolour flags for the local sit-in.` },
-                            { name: "Siddharth", city: "Bengaluru", bio: `Taught himself the violin from YouTube tutorials. Left a recording of "Vaishnava Jana To" on his mother's phone the night before. His music teacher led a fortnight-long vigil in Malleshwaram.` },
-                            { name: "Meera", city: "Ahmedabad", bio: `Daughter of a garment-factory worker. Wanted to open a free clinic in her home village. Her school WhatsApp group renamed itself "Meera Ka Sapna" the week she died, and every classmate changed their display picture to a marigold.` },
-                            { name: "Arjun", city: "Chandigarh", bio: `Second-generation aspirant from a family of small-town doctors. His grandfather, a retired army physician, held a solitary silent protest outside PGIMER every single day of the movement, rain or heat.` },
-                            { name: "Aditi", city: "Jaipur", bio: `Aged 18. Painted henna for her cousins every Eid and Diwali. She left a note asking her family to donate her art supplies to underprivileged students. Her mother now runs a scholarship in her name.` },
-                            { name: "Rohan", city: "Nagpur", bio: `His village had lived through a malaria outbreak the year before, and he wanted to become a tropical medicine specialist. His father, a small farmer, walked over 400 kilometres to Jantar Mantar carrying Rohan's NEET preparation guide.` },
-                            { name: "Sneha", city: "Chennai", bio: `The first person in her family to attempt NEET. Her uncle organised a parallel sit-in at Marina Beach that ran the full 71 days, with a portrait of Sneha at its centre.` },
-                            { name: "Karan", city: "Indore", bio: `Fourth-attempt candidate at 20. His last journal entry, in blue ink, read: "I still believe in myself. I just need one honest exam." His journal was placed at the Jantar Mantar memorial wall.` },
-                            { name: "Ishita", city: "Bhopal", bio: `Trained in Bharatanatyam since the age of six. Her ghungroos were placed at the base of her candle at the memorial. Her guru led a silent dance protest at the Bhopal Rangmandir every Sunday of the movement.` },
-                            { name: "Yash", city: "Mumbai", bio: `Son of a Mumbai Dabbawala. His father continued making tiffin deliveries to the Dadar Chowk protest campsite through all of July, refusing any payment for the meals.` },
-                            { name: "Riya", city: "Guwahati", bio: `Wanted to be a cardiac surgeon at AIIMS Guwahati. Her mother, a nurse, spoke at the Northeast Solidarity March wearing Riya's white lab coat over her uniform.` },
-                            { name: "Varun", city: "Pune", bio: `Aged 18. His last search on his laptop read: "how to prepare for a re-exam without breaking down." His college friends ran coding-a-thons through July to fund the medical tent at Jantar Mantar.` },
-                            { name: "Kavya", city: "Thiruvananthapuram", bio: `From a family of Malayali doctors. Her mother, a gynaecologist at Medical College Trivandrum, took unpaid leave for all 71 days to sit at Jantar Mantar and read Kavya's name aloud at every candlelight vigil.` },
-                            { name: "Tanmay", city: "Kanpur", bio: `Fifth-attempt aspirant. His father used to say, "My son is not a failure, the system is." That single line became a placard held at protests in eight cities across the country.` },
-                            { name: "Diya", city: "Bhubaneswar", bio: `Youngest of five sisters. Wrote her college essay about becoming a paediatrician for tribal children in the Sundargarh district. Her sisters together raised the funds for a 42-day campus sit-in in Bhubaneswar.` },
-                            { name: "Kabir", city: "Delhi", bio: `Lived in Jangpura. Frequently topped his coaching institute's mock tests. A phone recording his mother had made of him practising pediatric case-study answers went viral in June, and was played at every Delhi vigil for the rest of the movement.` }
+                            { first: "Pradeep",      name: "Pradeep Meghwal",        state: "Rajasthan" },
+                            { first: "Ritik",        name: "Ritik Mishra",           state: "Uttar Pradesh" },
+                            { first: "Siddharth",    name: "Siddharth Hegde",        state: "Goa" },
+                            { first: "Bhagyashree",  name: "Bhagyashree",            state: "Karnataka" },
+                            { first: "Renu",         name: "Renu Meena",             state: "Rajasthan" },
+                            { first: "Shivani",      name: "Shivani Yadav",          state: "Uttar Pradesh" },
+                            { first: "Anukeerthana", name: "Anukeerthana",           state: "Tamil Nadu" },
+                            { first: "Anshika",      name: "Anshika Pandey",         state: "Delhi" },
+                            { first: "Kahan",        name: "Kahan Patel",            state: "Gujarat" },
+                            { first: "Umesh",        name: "Umesh Mali",             state: "Rajasthan" },
+                            { first: "Riya",         name: "Riya Kumari Thapa",      state: "Uttarakhand" },
+                            { first: "Vetriyanantham", name: "Vetriyanantham",       state: "Tamil Nadu" },
+                            { first: "Simran",       name: "Simran",                 state: "Haryana" },
+                            { first: "Roshni",       name: "Roshni",                 state: "Tamil Nadu" },
+                            { first: "Rima",         name: "Rima Begum",             state: "Assam" },
+                            { first: "Maithili",     name: "Maithili Ashok Sonwane", state: "Maharashtra" },
+                            { first: "Avantika",     name: "Avantika Maurya",        state: "Madhya Pradesh" },
+                            { first: "Jatin",        name: "Jatin Kumar",            state: "Uttar Pradesh" },
+                            { first: "Gopika",       name: "Gopika",                 state: "Tamil Nadu" },
+                            { first: "Sana",         name: "Sheikh Sana",            state: "Telangana" },
+                            { first: "Akanksha",     name: "Akanksha Chaturvedi",    state: "Madhya Pradesh" }
                         ];
 
                         martyrs.forEach((m) => {
@@ -1863,10 +1852,10 @@ def main():
                                 <div class="candle-flame"></div>
                                 <div class="candle-wick"></div>
                                 <div class="candle-body"></div>
-                                <span class="candle-label">${m.name}</span>
+                                <span class="candle-label">${m.first}</span>
                                 <div class="tooltip">
-                                    <strong>${m.name} (${m.city})</strong><br>
-                                    ${m.bio}
+                                    <strong>${m.name}</strong><br>
+                                    ${m.state}
                                 </div>
                             `;
                             grid.appendChild(candle);
@@ -1927,7 +1916,7 @@ def main():
                     </h3>
                     <div class="context-card-body">
                         <p>Delhi was where the world watched, but Delhi was only ever the loudest room. From the second week of June, the movement leapt state lines and never looked back.</p>
-                        <p>In <strong>Hyderabad</strong>, students from Osmania University and the NEET aspirant coalition at IIT Hyderabad held nightly sit-ins at Tank Bund, hanging Sana's portrait from the lampposts each evening after her father joined the Jantar Mantar strike. In <strong>Mumbai</strong>, the Dadar Chowk march on June 15 drew fifteen thousand parents and coaching-class students; the Bombay High Court granted them protest permission the same afternoon Delhi Police was denying it. In <strong>Bihar</strong>, Patna and Muzaffarpur's unemployed graduates, who had failed the BPSC and NEET in the same brutal season, formed a joint front and held the longest continuous fast in the state's recorded history.</p>
+                        <p>In <strong>Hyderabad</strong>, students from Osmania University and the NEET aspirant coalition at IIT Hyderabad held nightly sit-ins at Tank Bund, hanging portraits of the martyrs from the lampposts each evening. In <strong>Mumbai</strong>, the Dadar Chowk march on June 15 drew fifteen thousand parents and coaching-class students; the Bombay High Court granted them protest permission the same afternoon Delhi Police was denying it. In <strong>Bihar</strong>, Patna and Muzaffarpur's unemployed graduates, who had failed the BPSC and NEET in the same brutal season, formed a joint front and held the longest continuous fast in the state's recorded history.</p>
                         <p>Kolkata's Jadavpur University campus turned into an open-air library of protest literature. Lucknow, Chennai, Bengaluru, Chandigarh, Guwahati, Kochi, Bhopal, and Ranchi lit their own fires. By the week the Union Minister resigned, <strong>more than two hundred cities</strong> had held at least one solidarity event.</p>
                         <p>What began in one corner of Delhi had, quietly and without a single central command, become a national reckoning.</p>
                     </div>

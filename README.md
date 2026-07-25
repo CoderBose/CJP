@@ -53,7 +53,7 @@ That's it. No dependencies, no build tools, no framework. Just Python's standard
 
 ## References
 
-Real events, legal cases, activists, and historical movements that anchor this fiction are catalogued in [REFERENCES.md](REFERENCES.md). Add to it when you find something worth remembering.
+The legal precedents, prior movements, and activist lineages the CJP stood on are catalogued in [REFERENCES.md](REFERENCES.md). Add to it when you find something worth remembering.
 
 ---
 
